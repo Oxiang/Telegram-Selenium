@@ -9,6 +9,7 @@ import json
 import requests
 import time
 import urllib
+import selenium_test as sl
 
 TOKEN = '735774561:AAGg5t8HdlNuccMtMCy1D5OHdQPz46puZjA'
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
@@ -51,9 +52,10 @@ def get_last_update_id(updates):
 def echo_all(updates):
     for update in updates["result"]:
         try:
-            text = update["message"]["text"]
+            #text = update["message"]["text"]
             chat = update["message"]["chat"]["id"]
-            send_message(text, chat)
+            new_text = sl.test_sele()
+            send_message(new_text, chat)
         except Exception as e:
             print(e)
 
