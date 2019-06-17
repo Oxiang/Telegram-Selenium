@@ -4,11 +4,11 @@ from selenium.webdriver.chrome.options import Options
 
 
 def test_sele():
-    chrome_options = Options()
-    chrome_options.binary_location = GOOGLE_CHROME_BIN
-    chrome_options.add_argument('--disable-gpu')
-    chrome_options.add_argument('--no-sandbox')
-    driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH, chrome_options=chrome_options)
+#    chrome_options = Options()
+#    chrome_options.binary_location = GOOGLE_CHROME_BIN
+#    chrome_options.add_argument('--disable-gpu')
+#    chrome_options.add_argument('--no-sandbox')
+#    driver = webdriver.Chrome(executable_path=CHROMEDRIVER_PATH, chrome_options=chrome_options)
     driver = webdriver.Chrome()
     driver.get("http://www.python.org")
     assert "Python" in driver.title
