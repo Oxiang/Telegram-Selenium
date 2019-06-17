@@ -10,6 +10,7 @@ import requests
 import time
 import urllib
 import selenium_test as sl
+import expedia_tele as et
 
 TOKEN = '735774561:AAGg5t8HdlNuccMtMCy1D5OHdQPz46puZjA'
 URL = "https://api.telegram.org/bot{}/".format(TOKEN)
@@ -54,7 +55,8 @@ def echo_all(updates):
         try:
             #text = update["message"]["text"]
             chat = update["message"]["chat"]["id"]
-            new_text = sl.test_sele()
+            #new_text = sl.test_sele()
+            new_text = et.test_main()
             send_message(new_text, chat)
         except Exception as e:
             print(e)

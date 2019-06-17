@@ -23,15 +23,10 @@ travel_month = 9
 max_extraction = 3
 travel_year = 2019
 
-#Start driver
-driver = webdriver.Chrome()
-driver.get("https://www.expedia.com.sg/")
-sleep(1.5)
-
 #Create main dataframe
 main_df = pd.DataFrame()
 
-def initialise_page():
+def initialise_page(start_date, end_date,driver):
     #switch to flight only
     flight_elem = driver.find_element_by_id("tab-flight-tab-hp")
     sleep(1)
@@ -77,7 +72,7 @@ def initialise_page():
     print("Serching for results")
 
 
-def single_page_extraction():
+def single_page_extraction(start_date,end_date,driver):
     #Create dataframe
     df = pd.DataFrame()
     id_date = start_date.strftime("%d/%m/%Y")
@@ -248,10 +243,16 @@ def single_page_extraction():
         
 #-------------------------------------------------------------------------------
 
-def main():
+def test_main():
     #Starting
     #Settle timing
-    start_date_str = str(travel_month)+"/01/2019" 
+    
+    #Start driver
+    driver = webdriver.Chrome()
+    driver.get("https://www.expedia.com.sg/")
+    sleep(1.5)
+
+    #start_date_str = str(travel_month)+"/01/2019" 
     start_date = datetime.datetime(travel_year, travel_month, 1)
     
     end_date = start_date + datetime.timedelta(days=travel_days)
@@ -267,9 +268,9 @@ def main():
     #chrome_options.add_argument("--incognito")
     #driver = webdriver.Chrome(chrome_options=chrome_options)
 
-    initialise_page()
+    initialise_page(start_date,end_date,driver)
     #Page extraction
-    single_page_extraction()
+    single_page_extraction(start_date,end_date,driver)
     
     
     for i in range(number_of_loops):
@@ -297,19 +298,23 @@ def main():
         print("Searching ...")
         
         #Extraction
-        single_page_extraction()
+        single_page_extraction(start_date,end_date,driver)
         
     
     print("Scraping finished for trip to {} from {}, {} days on the the #{} month with {} results".format(destination_country,
           origin_country,travel_days,travel_month, main_df.shape[0]))
             
-    main_df.to_csv("{}_to_{}.csv".format(origin_country, destination_country))
-    print(main_df.iloc[0,5])
-    #driver.close()
-    
-main()
-        
+    #main_df.to_csv("{}_to_{}.csv".format(origin_country, destination_country))
+    #print(main_df.iloc[0,5])
+    extracted_df = main_df.copy()
+    extracted_df = extracted_df.sort_values(['price'])
+    print(type(extracted_df.iloc[0,5]))
+    driver.close()
+    return extracted_df.iloc[0,5]
 
+        
+if __name__ == "__main__":
+    test_main()
         
         
         
