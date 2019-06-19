@@ -13,7 +13,14 @@ from selenium.webdriver.support import expected_conditions as EC
 import pandas as pd
 from time import sleep
 import datetime
+import os
 from calendar import monthrange
+from selenium.webdriver.chrome.options import Options as ChromeOptions
+
+#Set up chrome bin for heroku
+chrome_bin = os.environ.get('GOOGLE_CHROME_SHIM', None)
+opts = ChromeOptions()
+opts.binary_location = chrome_bin
 
 #Setting origin, destination
 origin_country = " Singapore"
@@ -248,10 +255,11 @@ def test_main():
     #Settle timing
     
     #Start driver
-    driver = webdriver.Chrome()
+    driver = webdriver.Chrome(executable_path="chromedriver", chrome_options=opts)
     driver.maximize_window()
     driver.implicitly_wait(20)
     driver.get("https://www.expedia.com.sg/")
+    print("Driver up and running")
     sleep(1.5)
 
     #start_date_str = str(travel_month)+"/01/2019" 
