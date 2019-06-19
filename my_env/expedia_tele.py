@@ -267,7 +267,7 @@ def test_main():
     #Settle timing
     
     #Start driver
-    driver = webdriver.Chrome(executable_path="chromedriver", chrome_options=opts)
+    driver = webdriver.Chrome(executable_path="chromedriver", chrome_options=options)
     driver.implicitly_wait(20)
     driver.get("https://www.expedia.com.sg/")
     print("Driver up and running")
