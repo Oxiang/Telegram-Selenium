@@ -18,11 +18,17 @@ from calendar import monthrange
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from bs4 import BeautifulSoup
 import requests
+from selenium.webdriver.chrome.options import Options
 
 #Set up chrome bin for heroku
-chrome_bin = os.environ.get('GOOGLE_CHROME_SHIM', None)
-opts = ChromeOptions()
-opts.binary_location = chrome_bin
+#chrome_bin = os.environ.get('GOOGLE_CHROME_SHIM', None)
+#opts = ChromeOptions()
+#opts.binary_location = chrome_bin
+options = Options()
+options.add_argument("--headless")
+options.binary_location = GOOGLE_CHROME_BIN
+options.add_argument('--disable-gpu')
+options.add_argument('--no-sandbox')
 
 #Setting origin, destination
 origin_country = " Singapore"
@@ -37,14 +43,10 @@ main_df = pd.DataFrame()
 
 def initialise_page(start_date, end_date,driver):
     #switch to flight only
-    #flight_elem = driver.find_element_by_id("tab-flight-tab-hp")
-    page = requests.get(driver.current_url)
-    soup = BeautifulSoup(page.content, 'html.parser')
-    print(soup.prettify())
-    
-    
-    
-    flight_elem = driver.find_element_by_xpath('//*[@id="tab-flight-tab-hp"]')
+    flight_elem = driver.find_element_by_id("tab-flight-tab-hp")
+#    page = requests.get(driver.current_url)
+#    soup = BeautifulSoup(page.content, 'html.parser')
+#    print(soup.prettify())
     sleep(1)
     flight_elem.click()
     print("switching to flight only tab")
@@ -327,7 +329,7 @@ def test_main():
     extracted_df = main_df.copy()
     extracted_df = extracted_df.sort_values(['price'])
     print(type(extracted_df.iloc[0,5]))
-    driver.close()
+    driver.quit()
     return extracted_df.iloc[0,5]
 
         
