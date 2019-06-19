@@ -16,6 +16,7 @@ import datetime
 import os
 from calendar import monthrange
 from selenium.webdriver.chrome.options import Options as ChromeOptions
+from bs4 import BeautifulSoup
 
 #Set up chrome bin for heroku
 chrome_bin = os.environ.get('GOOGLE_CHROME_SHIM', None)
@@ -36,6 +37,8 @@ main_df = pd.DataFrame()
 def initialise_page(start_date, end_date,driver):
     #switch to flight only
     #flight_elem = driver.find_element_by_id("tab-flight-tab-hp")
+    soup = BeautifulSoup(driver.current_url)
+    print(soup.prettify())
     flight_elem = driver.find_element_by_xpath('//*[@id="tab-flight-tab-hp"]')
     sleep(1)
     flight_elem.click()
