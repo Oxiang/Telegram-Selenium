@@ -249,6 +249,8 @@ def test_main():
     
     #Start driver
     driver = webdriver.Chrome()
+    driver.maximize_window()
+    driver.implicitly_wait(20)
     driver.get("https://www.expedia.com.sg/")
     sleep(1.5)
 
