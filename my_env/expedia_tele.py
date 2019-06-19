@@ -26,6 +26,7 @@ from selenium.webdriver.chrome.options import Options
 #opts.binary_location = chrome_bin
 options = Options()
 options.add_argument("--headless")
+GOOGLE_CHROME_BIN = "/app/.apt/usr/bin/google-chrome"
 options.binary_location = GOOGLE_CHROME_BIN
 options.add_argument('--disable-gpu')
 options.add_argument('--no-sandbox')
