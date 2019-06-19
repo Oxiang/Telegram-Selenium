@@ -35,7 +35,8 @@ main_df = pd.DataFrame()
 
 def initialise_page(start_date, end_date,driver):
     #switch to flight only
-    flight_elem = driver.find_element_by_id("tab-flight-tab-hp")
+    #flight_elem = driver.find_element_by_id("tab-flight-tab-hp")
+    flight_elem = driver.find_element_by_xpath('//*[@id="tab-flight-tab-hp"]')
     sleep(1)
     flight_elem.click()
     print("switching to flight only tab")
