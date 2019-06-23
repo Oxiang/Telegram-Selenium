@@ -53,11 +53,10 @@ def get_last_update_id(updates):
 def echo_all(updates):
     for update in updates["result"]:
         try:
-            #text = update["message"]["text"]
+            text = update["message"]["text"]
             chat = update["message"]["chat"]["id"]
-            #new_text = sl.test_sele()
-            new_text = et.test_main()
-            send_message(new_text, chat)
+            #new_text = et.test_main()
+            send_message(text, chat)
         except Exception as e:
             print(e)
 
