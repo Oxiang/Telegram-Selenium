@@ -24,18 +24,18 @@ from selenium.webdriver.chrome.options import Options
 #chrome_bin = os.environ.get('GOOGLE_CHROME_SHIM', None)
 #opts = ChromeOptions()
 #opts.binary_location = chrome_bin
-options = Options()
-options.add_argument("--headless")
-GOOGLE_CHROME_BIN = "/app/.apt/usr/bin/google-chrome"
-options.binary_location = GOOGLE_CHROME_BIN
-options.add_argument('--disable-gpu')
-options.add_argument('--no-sandbox')
+#options = Options()
+#options.add_argument("--headless")
+#GOOGLE_CHROME_BIN = "/app/.apt/usr/bin/google-chrome"
+#options.binary_location = GOOGLE_CHROME_BIN
+#options.add_argument('--disable-gpu')
+#options.add_argument('--no-sandbox')
 
 #Setting origin, destination
 origin_country = " Singapore"
-destination_country = " Korea"
-travel_days = 29
-travel_month = 9
+destination_country = " Taipei"
+travel_days = 6
+travel_month = 8
 max_extraction = 3
 travel_year = 2019
 
@@ -267,7 +267,8 @@ def test_main():
     #Settle timing
     
     #Start driver
-    driver = webdriver.Chrome(executable_path="chromedriver", chrome_options=options)
+    3#driver = webdriver.Chrome(executable_path="chromedriver", chrome_options=options)
+    driver = webdriver.Chrome(executable_path="chromedriver")
     driver.implicitly_wait(20)
     driver.get("https://www.expedia.com.sg/")
     print("Driver up and running")
@@ -325,7 +326,7 @@ def test_main():
     print("Scraping finished for trip to {} from {}, {} days on the the #{} month with {} results".format(destination_country,
           origin_country,travel_days,travel_month, main_df.shape[0]))
             
-    #main_df.to_csv("{}_to_{}.csv".format(origin_country, destination_country))
+    main_df.to_csv("{}_to_{}.csv".format(origin_country, destination_country))
     #print(main_df.iloc[0,5])
     extracted_df = main_df.copy()
     extracted_df = extracted_df.sort_values(['price'])
