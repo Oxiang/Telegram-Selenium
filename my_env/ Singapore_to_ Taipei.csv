@@ -1,0 +1,127 @@
+,departure date,return date,departure time,arrival time,airline,price,duration,stops,layover,return departure time,return arrival time,return airline,return price,return duration,return stops
+0,01/08/2019,07/08/2019,1:10,6:00,Scoot,199,4h 55m,(Direct),"2h 55m in KUL
+Stopover 2h 55m in KUL",6:10,11:05,Scoot,0,4h 55m,(Direct)
+1,01/08/2019,07/08/2019,6:10,11:05,Jetstar Asia,200,4h 50m,(Direct),"2h 55m in KUL
+Stopover 2h 55m in KUL",1:10,6:00,Jetstar Asia,0,4h 50m,(Direct)
+2,01/08/2019,07/08/2019,1:10,6:00,Jetstar Asia,200,4h 50m,(Direct),"2h 55m in KUL
+Stopover 2h 55m in KUL",7:00,11:50,Jetstar Asia,0,4h 50m,(Direct)
+0,02/08/2019,08/08/2019,12:10,17:00,Scoot,202,4h 50m,(Direct),"9h 30m in KUL
+Stopover 9h 30m in KUL",12:10,17:00,Scoot,0,4h 50m,(Direct)
+1,02/08/2019,08/08/2019,7:00,11:50,Jetstar Asia,204,4h 50m,(Direct),"9h 30m in KUL
+Stopover 9h 30m in KUL",7:00,11:50,Jetstar Asia,0,4h 50m,(Direct)
+2,02/08/2019,08/08/2019,0:50,5:40,Scoot,211,4h 50m,(Direct),"9h 30m in KUL
+Stopover 9h 30m in KUL",0:50,5:40,Scoot,0,4h 50m,(Direct)
+0,03/08/2019,09/08/2019,1:10,6:00,Jetstar Asia,252,4h 50m,(Direct),"3h 5m in KUL
+Stopover 3h 5m in KUL",1:10,6:00,Jetstar Asia,0,4h 50m,(Direct)
+1,03/08/2019,09/08/2019,7:00,11:50,Jetstar Asia,252,4h 50m,(Direct),"3h 5m in KUL
+Stopover 3h 5m in KUL",7:00,11:50,Jetstar Asia,0,4h 50m,(Direct)
+2,03/08/2019,09/08/2019,6:10,11:05,Scoot,281,4h 55m,(Direct),"3h 5m in KUL
+Stopover 3h 5m in KUL",6:10,11:05,Scoot,0,4h 55m,(Direct)
+0,04/08/2019,10/08/2019,0:50,5:40,Scoot,250,4h 50m,(Direct),"9h 30m in KUL
+Stopover 9h 30m in KUL",0:50,5:40,Scoot,0,4h 50m,(Direct)
+1,04/08/2019,10/08/2019,0:50,5:40,Scoot,250,4h 55m,(Direct),"9h 30m in KUL
+Stopover 9h 30m in KUL",6:10,11:05,Scoot,0,4h 55m,(Direct)
+2,04/08/2019,10/08/2019,6:10,11:05,Scoot,281,4h 50m,(Direct),"9h 30m in KUL
+Stopover 9h 30m in KUL",12:10,17:00,Scoot,0,4h 50m,(Direct)
+0,05/08/2019,11/08/2019,0:50,5:40,Scoot,312,4h 50m,(Direct),"9h 30m in KUL
+Stopover 9h 30m in KUL",0:50,5:40,Scoot,0,4h 50m,(Direct)
+1,05/08/2019,11/08/2019,7:00,11:50,Jetstar Asia,314,4h 50m,(Direct),"9h 30m in KUL
+Stopover 9h 30m in KUL",7:00,11:50,Jetstar Asia,0,4h 50m,(Direct)
+2,05/08/2019,11/08/2019,0:50,5:40,Scoot with baggage,339,4h 50m,(Direct),"9h 30m in KUL
+Stopover 9h 30m in KUL",0:50,5:40,Scoot with baggage,0,4h 50m,(Direct)
+0,06/08/2019,12/08/2019,6:40,14:10,Scoot,370,4h 55m,(Direct),"15h 45m in KUL
+Stopover 15h 45m in KUL",6:10,11:05,Scoot,0,4h 55m,(Direct)
+1,06/08/2019,12/08/2019,6:10,11:05,Scoot with baggage,397,4h 55m,(Direct),"15h 45m in KUL
+Stopover 15h 45m in KUL",6:10,11:05,Scoot with baggage,0,4h 55m,(Direct)
+2,06/08/2019,12/08/2019,6:10,11:05,Scoot,412,4h 50m,(Direct),"15h 45m in KUL
+Stopover 15h 45m in KUL",8:50,13:40,Scoot,0,4h 50m,(Direct)
+0,07/08/2019,13/08/2019,20:45,6:45,Vietnam Airlines,423,10h 0m,(1 stop),"4h 10m in SGN
+Stopover 4h 10m in SGN",20:45,6:45,Vietnam Airlines,0,10h 0m,(1 stop)
+1,07/08/2019,13/08/2019,18:25,6:45,Vietnam Airlines,423,12h 20m,(1 stop),"6h 30m in SGN
+Stopover 6h 30m in SGN",18:25,6:45,Vietnam Airlines,0,12h 20m,(1 stop)
+2,07/08/2019,13/08/2019,6:40,14:20,Malaysia Airlines,442,7h 40m,(1 stop),"1h 35m in KUL
+Stopover 1h 35m in KUL",6:40,14:20,Malaysia Airlines,0,7h 40m,(1 stop)
+0,08/08/2019,14/08/2019,0:30,8:40,Philippine Airlines,499,8h 10m,(1 stop),"1h 55m in MNL
+Stopover 1h 55m in MNL",0:30,8:40,Philippine Airlines,0,8h 10m,(1 stop)
+1,08/08/2019,14/08/2019,10:30,20:00,Philippine Airlines,499,9h 30m,(1 stop),"3h 35m in MNL
+Stopover 3h 35m in MNL",10:30,20:00,Philippine Airlines,0,9h 30m,(1 stop)
+2,08/08/2019,14/08/2019,14:30,8:30,Philippine Airlines,499,18h 0m,(1 stop),"11h 55m in MNL
+Stopover 11h 55m in MNL",14:30,8:30,Philippine Airlines,0,18h 0m,(1 stop)
+0,09/08/2019,15/08/2019,23:00,12:20,Multiple Airlines,381,13h 20m,(1 stop),"7h 35m in KUL
+Stopover 7h 35m in KUL",23:00,12:20,Multiple Airlines,0,13h 20m,(1 stop)
+1,09/08/2019,15/08/2019,23:00,14:40,Multiple Airlines,381,15h 40m,(1 stop),"9h 55m in KUL
+Stopover 9h 55m in KUL",23:00,14:40,Multiple Airlines,0,15h 40m,(1 stop)
+2,09/08/2019,15/08/2019,20:45,12:20,Multiple Airlines,392,15h 35m,(1 stop),"9h 50m in KUL
+Stopover 9h 50m in KUL",20:45,12:20,Multiple Airlines,0,15h 35m,(1 stop)
+0,10/08/2019,16/08/2019,1:10,6:00,Jetstar Asia,232,4h 50m,(Direct),"17h 35m in KUL
+Stopover 17h 35m in KUL",1:10,6:00,Jetstar Asia,0,4h 50m,(Direct)
+1,10/08/2019,16/08/2019,7:00,11:50,Jetstar Asia,232,4h 50m,(Direct),"17h 35m in KUL
+Stopover 17h 35m in KUL",7:00,11:50,Jetstar Asia,0,4h 50m,(Direct)
+2,10/08/2019,16/08/2019,6:10,11:05,Scoot,281,4h 55m,(Direct),"17h 35m in KUL
+Stopover 17h 35m in KUL",6:10,11:05,Scoot,0,4h 55m,(Direct)
+0,11/08/2019,17/08/2019,1:10,6:00,Jetstar Asia,200,4h 50m,(Direct),"6h in KUL
+Stopover 6h in KUL",1:10,6:00,Jetstar Asia,0,4h 50m,(Direct)
+1,11/08/2019,17/08/2019,1:10,6:00,Jetstar Asia,200,4h 50m,(Direct),"6h in KUL
+Stopover 6h in KUL",7:00,11:50,Jetstar Asia,0,4h 50m,(Direct)
+2,11/08/2019,17/08/2019,7:00,11:50,Scoot,216,4h 50m,(Direct),"6h in KUL
+Stopover 6h in KUL",0:50,5:40,Scoot,0,4h 50m,(Direct)
+0,12/08/2019,18/08/2019,10:25,15:10,Scoot,208,4h 50m,(Direct),"15h 45m in KUL
+Stopover 15h 45m in KUL",0:50,5:40,Scoot,0,4h 50m,(Direct)
+1,12/08/2019,18/08/2019,0:50,5:40,Jetstar Asia,216,4h 50m,(Direct),"15h 45m in KUL
+Stopover 15h 45m in KUL",7:00,11:50,Jetstar Asia,0,4h 50m,(Direct)
+2,12/08/2019,18/08/2019,7:00,11:50,Scoot,230,4h 50m,(Direct),"15h 45m in KUL
+Stopover 15h 45m in KUL",8:50,13:40,Scoot,0,4h 50m,(Direct)
+0,13/08/2019,19/08/2019,6:10,11:05,Scoot,199,4h 55m,(Direct),"11h 55m in KUL
+Stopover 11h 55m in KUL",6:10,11:05,Scoot,0,4h 55m,(Direct)
+1,13/08/2019,19/08/2019,0:50,5:40,Scoot,208,4h 50m,(Direct),"11h 55m in KUL
+Stopover 11h 55m in KUL",0:50,5:40,Scoot,0,4h 50m,(Direct)
+2,13/08/2019,19/08/2019,8:50,13:40,Scoot,208,4h 50m,(Direct),"11h 55m in KUL
+Stopover 11h 55m in KUL",8:50,13:40,Scoot,0,4h 50m,(Direct)
+0,14/08/2019,20/08/2019,0:50,5:40,Scoot,199,4h 50m,(Direct),"4h 10m in KUL
+Stopover 4h 10m in KUL",0:50,5:40,Scoot,0,4h 50m,(Direct)
+1,14/08/2019,20/08/2019,1:10,6:00,Jetstar Asia,200,4h 50m,(Direct),"4h 10m in KUL
+Stopover 4h 10m in KUL",1:10,6:00,Jetstar Asia,0,4h 50m,(Direct)
+2,14/08/2019,20/08/2019,7:00,11:50,Jetstar Asia,200,4h 50m,(Direct),"4h 10m in KUL
+Stopover 4h 10m in KUL",7:00,11:50,Jetstar Asia,0,4h 50m,(Direct)
+0,15/08/2019,21/08/2019,6:10,11:05,Scoot,199,4h 55m,(Direct),"1h 45m in KUL
+Stopover 1h 45m in KUL",6:10,11:05,Scoot,0,4h 55m,(Direct)
+1,15/08/2019,21/08/2019,1:10,6:00,Jetstar Asia,200,4h 50m,(Direct),"1h 45m in KUL
+Stopover 1h 45m in KUL",1:10,6:00,Jetstar Asia,0,4h 50m,(Direct)
+2,15/08/2019,21/08/2019,7:00,11:50,Jetstar Asia,200,4h 50m,(Direct),"1h 45m in KUL
+Stopover 1h 45m in KUL",7:00,11:50,Jetstar Asia,0,4h 50m,(Direct)
+0,16/08/2019,22/08/2019,0:50,5:40,Scoot,208,4h 50m,(Direct),"2h 55m in KUL
+Stopover 2h 55m in KUL",0:50,5:40,Scoot,0,4h 50m,(Direct)
+1,16/08/2019,22/08/2019,12:10,17:00,Scoot,208,4h 50m,(Direct),"2h 55m in KUL
+Stopover 2h 55m in KUL",12:10,17:00,Scoot,0,4h 50m,(Direct)
+2,16/08/2019,22/08/2019,7:00,11:50,Jetstar Asia,222,4h 50m,(Direct),"2h 55m in KUL
+Stopover 2h 55m in KUL",7:00,11:50,Jetstar Asia,0,4h 50m,(Direct)
+0,17/08/2019,23/08/2019,7:00,11:50,Jetstar Asia,200,4h 50m,(Direct),"3h 5m in KUL
+Stopover 3h 5m in KUL",7:00,11:50,Jetstar Asia,0,4h 50m,(Direct)
+1,17/08/2019,23/08/2019,0:50,5:40,Scoot,211,4h 50m,(Direct),"3h 5m in KUL
+Stopover 3h 5m in KUL",0:50,5:40,Scoot,0,4h 50m,(Direct)
+2,17/08/2019,23/08/2019,6:10,11:05,Scoot,211,4h 55m,(Direct),"3h 5m in KUL
+Stopover 3h 5m in KUL",6:10,11:05,Scoot,0,4h 55m,(Direct)
+0,18/08/2019,24/08/2019,1:10,6:00,Jetstar Asia,200,4h 50m,(Direct),"9h 30m in KUL
+Stopover 9h 30m in KUL",1:10,6:00,Jetstar Asia,0,4h 50m,(Direct)
+1,18/08/2019,24/08/2019,7:00,11:50,Jetstar Asia,200,4h 50m,(Direct),"9h 30m in KUL
+Stopover 9h 30m in KUL",7:00,11:50,Jetstar Asia,0,4h 50m,(Direct)
+2,18/08/2019,24/08/2019,0:50,5:40,Scoot,211,4h 50m,(Direct),"9h 30m in KUL
+Stopover 9h 30m in KUL",0:50,5:40,Scoot,0,4h 50m,(Direct)
+0,19/08/2019,25/08/2019,0:50,5:40,Scoot,199,4h 50m,(Direct),"13h 20m in KUL
+Stopover 13h 20m in KUL",0:50,5:40,Scoot,0,4h 50m,(Direct)
+1,19/08/2019,25/08/2019,7:00,11:50,Jetstar Asia,200,4h 50m,(Direct),"13h 20m in KUL
+Stopover 13h 20m in KUL",7:00,11:50,Jetstar Asia,0,4h 50m,(Direct)
+2,19/08/2019,25/08/2019,8:50,13:40,Scoot,230,4h 50m,(Direct),"13h 20m in KUL
+Stopover 13h 20m in KUL",8:50,13:40,Scoot,0,4h 50m,(Direct)
+0,20/08/2019,26/08/2019,0:50,5:40,Scoot,199,4h 50m,(Direct),"11h 55m in KUL
+Stopover 11h 55m in KUL",0:50,5:40,Scoot,0,4h 50m,(Direct)
+1,20/08/2019,26/08/2019,8:50,13:40,Scoot,199,4h 50m,(Direct),"11h 55m in KUL
+Stopover 11h 55m in KUL",8:50,13:40,Scoot,0,4h 50m,(Direct)
+2,20/08/2019,26/08/2019,6:10,11:05,Scoot,199,4h 55m,(Direct),"11h 55m in KUL
+Stopover 11h 55m in KUL",6:10,11:05,Scoot,0,4h 55m,(Direct)
+0,21/08/2019,27/08/2019,12:10,17:00,Scoot,199,4h 50m,(Direct),"1h 45m in KUL
+Stopover 1h 45m in KUL",12:10,17:00,Scoot,0,4h 50m,(Direct)
+1,21/08/2019,27/08/2019,1:10,6:00,Jetstar Asia,200,4h 50m,(Direct),"1h 45m in KUL
+Stopover 1h 45m in KUL",1:10,6:00,Jetstar Asia,0,4h 50m,(Direct)
+2,21/08/2019,27/08/2019,7:00,11:50,Jetstar Asia,200,4h 50m,(Direct),"1h 45m in KUL
+Stopover 1h 45m in KUL",7:00,11:50,Jetstar Asia,0,4h 50m,(Direct)
